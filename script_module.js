@@ -39,15 +39,15 @@ var myGame = (function () {
 		die4.innerHTML = d4;
 
 		if (diceTotal === diceTotalplayer) {
-			result.innerHTML = "Game is a DRAW!!!";
+			result.innerHTML = "<span style='color:#4949ea'> EWWW A DRAW! </span>";
 
 		} else if (diceTotal < diceTotalplayer) {
 
-			result.innerHTML = "You win";
+			result.innerHTML = "<span style='color:#0BB56E'> YOUR A WINNER, BABY </span>";
 
 		} else if (diceTotal > diceTotalplayer) {
 
-			result.innerHTML = "You lose";
+			result.innerHTML = "<span style='color:#Ea4977'> YOU SADLY LOST </span>";
 		}
 	};
 
@@ -57,14 +57,14 @@ var myGame = (function () {
 
 		status.innerHTML = "You Rolled " + diceTotal + ".";
 		if (d1 === d2) {
-			status.innerHTML += " doubles how cool!";
+			status.innerHTML += "<span style='color:#9448ed'> DOUBLE TROUBLE </span>";
 		}
 
 
 
 		status2.innerHTML = "You Rolled " + diceTotalplayer + ".";
 		if (d3 === d4) {
-			status2.innerHTML += " doubles how cool!";
+			status2.innerHTML += "<span style='color:#9448ed'> DOUBLE DOUBLE </span>";
 		}
 	};
 
