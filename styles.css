@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background: #EBEFF5;
+}
+
+.button{
+background: #0395FF;
+color: #fff;	
+border-style: none;
+border-radius: 6px;	
+width: 150px;
+height:36px;
+}
+
+div.dices{
+	
+	float: left;
+	width: 45px;
+	height: 45px;
+	padding: 5px;
+	background:#BEECE8;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin: 10px;
+	
+}

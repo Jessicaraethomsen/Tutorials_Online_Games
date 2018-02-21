@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Feeling Lucky</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script>
+
+function display() {
+'use strict';
+var die1 = document.getElementById("die1");
+var die2 = document.getElementById("die2");
+var die3 = document.getElementById("die3");
+var die4 = document.getElementById("die4");
+	
+var status = document.getElementById("computerscore");
+var status2 = document.getElementById("playersscore");
+
+var d1 = Math.floor(Math.random() * 6) + 1;  //plus one allows us to round down
+var d2 = Math.floor(Math.random() * 6) + 1;
+var d3 = Math.floor(Math.random() * 6) + 1;  //plus one allows us to round down
+var d4 = Math.floor(Math.random() * 6) + 1;
+
+var diceTotal = d1 + d2;
+die1.innerHTML = d1;
+die2.innerHTML = d2;
+	
+	
+
+
+status.innerHTML = "You Rolled " +diceTotal+".";
+	if(d1 == d2){
+		status.innerHTML += " doubles how cool!";
+	}
+	
+var diceTotalplayer = d3 + d4;
+die3.innerHTML = d3;
+die4.innerHTML = d4;
+
+	
+	status2.innerHTML = "You Rolled " +diceTotalplayer+".";
+	if(d3 == d4){
+		status2.innerHTML += " doubles how cool!";
+	}
+}
+		
+	
+	</script>
+</head>
+
+<body>
+<h1>Dice Rolling Game</h1>
+<h2>Roll your dices and see if you can beat the computer.</h2>
+<!--Onclick allow us to call the function-->
+
+<h3>Computers Score</h3>
+<div id="die1" class="dices">0</div>
+<div id="die2" class="dices">0</div>
+
+<button onClick="display()">Roll Dice</button>
+<h2 id="computerscore"></h2>
+
+
+
+<h2>Your Score.</h2>
+<!--Onclick allow us to call the function-->
+
+<div id="die3" class="dices">0</div>
+<div id="die4" class="dices">0</div>
+
+<h2 id="playersscore"></h2>
+
+
+
+<!--/*<script type="text/javascript" src="scripts.js"></script>
+*--></body>
+</html>
